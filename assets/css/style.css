@@ -1,22 +1,10 @@
 /* -----------------------------------GLOBALI----------------------------------- */
 
 :root {
-  --primary-color: #0560fc;
-  --secondary-color: #b3d0e7;
-  --font-primary: "Nunito", sans-serif;
-}
-
-.btn-style {
-  padding: 8px 15px;
-  background-color: var(--primary-color);
-  color: white;
-  font-family: var(--font-primary);
-  font-size: 1rem;
-  border: none;
-}
-
-.btn-style:hover {
-  background-color: var(--secondary-color);
+  --primary-color: #7c69a4;
+  --secondary-color: #ff9613;
+  --font-primary: "Montserrat", "Helvetica Neue", sans-serif;
+  --font-secondary: "Nerko One", cursive;
 }
 
 /* DEBUG */
@@ -52,6 +40,7 @@ body {
 
 header {
   z-index: 100;
+  position: sticky;
 }
 
 img {
@@ -183,10 +172,51 @@ h5 {
   margin-bottom: 2rem;
 }
 
-/* ----------------------------------- RESPONSIVE DESIGN ----------------------------------- */
+/* ----------------------------------- HEADER MOBILE FINO A 576px -----------------------------------*/
 
-@media (max-width: 768px) {
-  .flex-element {
-    flex-direction: column;
+#header-menu {
+  width: 100%;
+  padding: 0 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .col-100 {
+  text-align: center;
+}
+
+.logo {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+/* ----------------------------------- HEADER LARGE MOBILE DA 577px A 768px -----------------------------------*/
+@media screen and (min-width: 577px) {
+  header .col-100 {
+    text-align: left;
+  }
+  .logo {
+    font-size: 3rem;
+  }
+}
+
+/* ----------------------------------- HEADER TABLET DA 769px A 992px -----------------------------------*/
+@media screen and (min-width: 769px) {
+  header .col-100 {
+    text-align: left;
+  }
+}
+
+.logo {
+  font-size: 3rem;
+}
+/* ----------------------------------- HEADER DESKTOP DA 993px A INFINITO -----------------------------------*/
+@media screen and (min-width: 993px) {
+  header .col-100 {
+    text-align: left;
+  }
+  .logo {
+    font-size: 4rem;
   }
 }
