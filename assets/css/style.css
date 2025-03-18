@@ -66,6 +66,12 @@ a {
   padding: 1rem;
 }
 
+@media screen and (min-width: 993px) {
+  .spacing-page {
+    padding: 3rem 8rem;
+  }
+}
+
 /* ----------------------------------- LAYOUT ----------------------------------- */
 
 .wrapper {
@@ -406,4 +412,56 @@ p {
 }
 /* ------- PRESENTATION SECTION DA 993px A INFINITO ------- */
 @media screen and (min-width: 993px) {
+}
+
+/* ----------------------------------- FOOTER MOBILE FINO A 576px -----------------------------------*/
+
+footer .container {
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+}
+
+footer .row {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+footer .col {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer .col li {
+  display: block;
+}
+
+.col-menu li {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+/* ------- FOOTER MOBILE DA 577px A 768px ------- */
+@media screen and (min-width: 577px) {
+}
+/* -------  FOOTER DA 769px A 992px ------- */
+@media screen and (min-width: 769px) {
+}
+/* ------- FOOTER DA 993px A INFINITO ------- */
+@media screen and (min-width: 993px) {
+  footer .row {
+    justify-content: space-between;
+  }
+
+  footer .col {
+    width: 40%;
+    text-align: left;
+  }
+
+  .col-menu {
+    width: 40%;
+  }
 }
