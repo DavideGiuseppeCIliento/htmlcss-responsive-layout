@@ -185,6 +185,10 @@ h5 {
   font-weight: 900;
 }
 
+.shadow {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
 /* ----------------------------------- HEADER MOBILE FINO A 576px -----------------------------------*/
 
 #header-menu {
@@ -254,27 +258,65 @@ header .row {
   padding: 1rem;
 }
 
+.info-title {
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
 li {
   padding-bottom: 1rem;
 }
 
-/* ------- HEADER LARGE MOBILE DA 577px A 768px ------- */
+ul {
+  margin-top: 2rem;
+}
+
+/* ------- PRESENTATION SECTION MOBILE DA 577px A 768px ------- */
 @media screen and (min-width: 577px) {
 }
 
-/* -------  HEADER TABLET DA 769px A 992px ------- */
+/* -------  PRESENTATION SECTION DA 769px A 992px ------- */
 @media screen and (min-width: 769px) {
-  header .col-100 {
-    text-align: left;
+  li {
+    display: inline-block;
+    padding-right: 1rem;
   }
 }
 
-/* ------- HEADER DESKTOP DA 993px A INFINITO ------- */
+/* ------- PRESENTATION SECTION DA 993px A INFINITO ------- */
 @media screen and (min-width: 993px) {
-  header .col-100 {
-    text-align: left;
+  #presentation .row {
+    display: flex;
+    flex-wrap: wrap;
   }
-  .logo {
-    font-size: 3rem;
+
+  .category-food {
+    width: 100%;
   }
+  .title-card {
+    width: 100%;
+  }
+  .video-card {
+    width: 70%;
+  }
+  .info-card {
+    width: 30%;
+  }
+}
+
+/* ----------------------------------- SOCIAL SECTION MOBILE FINO A 576px -----------------------------------*/
+
+#social .container {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+#social .row {
+  justify-content: space-between;
+}
+
+#social .col {
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem 1.3rem;
 }
