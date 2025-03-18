@@ -1,3 +1,24 @@
+/* -----------------------------------GLOBALI----------------------------------- */
+
+:root {
+  --primary-color: #0560fc;
+  --secondary-color: #b3d0e7;
+  --font-primary: "Nunito", sans-serif;
+}
+
+.btn-style {
+  padding: 8px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  border: none;
+}
+
+.btn-style:hover {
+  background-color: var(--secondary-color);
+}
+
 /* DEBUG */
 
 .db-color1 {
@@ -12,34 +33,7 @@
   background-color: blue;
 }
 
-/* MODELLO STRUTTURA */
-/* container {
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 1rem;
-
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-}
-
-[class*='col'] {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.col-1-2 {
-  width: calc(100% / 2);
-} */
-
-/* RESET VARIABILI GLOBALI */
+/* ----------------------------------- RESET VARIABILI GLOBALI -----------------------------------*/
 
 * {
   padding: 0;
@@ -78,7 +72,7 @@ a {
   color: inherit;
 }
 
-/* LAYOUT */
+/* ----------------------------------- LAYOUT ----------------------------------- */
 
 .wrapper {
   display: flex;
@@ -89,6 +83,7 @@ a {
 .flex-element {
   display: flex;
   gap: 5px;
+  flex-wrap: wrap;
 }
 
 .element-row-wrap {
@@ -100,7 +95,19 @@ a {
   flex-flow: column wrap;
 }
 
-/* TIPOGRAFIA */
+.column-vertical-center {
+  justify-content: center;
+}
+
+.row-vertical-center {
+  align-items: center;
+}
+
+.row-space-between {
+  justify-content: space-between;
+}
+
+/* ----------------------------------- TIPOGRAFIA -----------------------------------*/
 
 h1 {
   font-size: 4rem;
@@ -122,10 +129,22 @@ h5 {
   font-size: 1.2rem;
 }
 
-/* UTILITY */
+/* -----------------------------------UTILITY -----------------------------------*/
+
+.col-25 {
+  width: 25%;
+}
+
+.col-35 {
+  width: 35%;
+}
 
 .col-50 {
   width: 50%;
+}
+
+.col-65 {
+  width: 65%;
 }
 
 .col-75 {
@@ -144,7 +163,27 @@ h5 {
   height: 100vh;
 }
 
-/* RESPONSIVE DESIGN */
+.style-bold-900 {
+  font-weight: 900;
+}
+
+.col-small {
+  flex: 0 1 30%;
+}
+
+.col-big {
+  flex: 1 1;
+}
+
+.margin-top-6 {
+  margin-top: 6rem;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
+/* ----------------------------------- RESPONSIVE DESIGN ----------------------------------- */
 
 @media (max-width: 768px) {
   .flex-element {
