@@ -308,7 +308,7 @@ ul {
 
 #social .container {
   width: 100%;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 #social .row {
@@ -317,6 +317,93 @@ ul {
 
 #social .col {
   background-color: white;
-  border-radius: 50%;
+  border-radius: 30px;
   padding: 1rem 1.3rem;
+}
+
+/* ------- PRESENTATION SECTION MOBILE DA 577px A 768px ------- */
+@media screen and (min-width: 577px) {
+}
+/* -------  PRESENTATION SECTION DA 769px A 992px ------- */
+@media screen and (min-width: 769px) {
+}
+/* ------- PRESENTATION SECTION DA 993px A INFINITO ------- */
+@media screen and (min-width: 993px) {
+  .facebook::after {
+    content: "Facebook";
+  }
+
+  .twitter::after {
+    content: "Twitter";
+  }
+
+  .instagram::after {
+    content: "Instagram";
+  }
+
+  .pinterest::after {
+    content: "Pinterest";
+  }
+
+  .youtube::after {
+    content: "Youtube";
+  }
+}
+
+/* ----------------------------------- BANNER SECTION MOBILE FINO A 576px -----------------------------------*/
+
+#banner {
+  display: none;
+}
+
+/* -------  BANNER SECTION DA 769px A 992px ------- */
+@media screen and (min-width: 769px) {
+  #banner {
+    display: block;
+  }
+}
+
+/* ----------------------------------- TEXT SECTION MOBILE FINO A 576px -----------------------------------*/
+
+#text .container {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.title-text {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+hr {
+  background-color: var(--secondary-color);
+  width: 25%;
+  margin: 1rem 0;
+  height: 1px; /* Spessore della linea */
+  border: none;
+}
+
+#text img {
+  display: block;
+  margin: 1rem auto;
+  width: 65%;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+/* ------- PRESENTATION SECTION MOBILE DA 577px A 768px ------- */
+@media screen and (min-width: 577px) {
+}
+/* -------  PRESENTATION SECTION DA 769px A 992px ------- */
+@media screen and (min-width: 769px) {
+  #text img {
+    width: 45%;
+    padding-right: 1.5rem;
+    float: left;
+  }
+}
+/* ------- PRESENTATION SECTION DA 993px A INFINITO ------- */
+@media screen and (min-width: 993px) {
 }
