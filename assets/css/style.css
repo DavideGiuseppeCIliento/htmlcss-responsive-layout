@@ -3,6 +3,7 @@
 :root {
   --primary-color: #7c69a4;
   --secondary-color: #ff9613;
+  --background-body: #f6f5f3;
   --font-primary: "Montserrat", "Helvetica Neue", sans-serif;
   --font-secondary: "Nerko One", cursive;
 }
@@ -30,12 +31,12 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 15px;
 }
 
 body {
-  background-color: #f5f8fa;
-  font-family: "Arial", sans-serif;
+  background-color: var(--background-body);
+  font-family: var(--font-primary);
 }
 
 header {
@@ -61,6 +62,10 @@ a {
   color: inherit;
 }
 
+.spacing-page {
+  padding: 1rem;
+}
+
 /* ----------------------------------- LAYOUT ----------------------------------- */
 
 .wrapper {
@@ -82,6 +87,10 @@ a {
 
 .column-element-wrap {
   flex-flow: column wrap;
+}
+
+.column-orizontal-center {
+  justify-content: center;
 }
 
 .column-vertical-center {
@@ -172,6 +181,10 @@ h5 {
   margin-bottom: 2rem;
 }
 
+.font-weight {
+  font-weight: 900;
+}
+
 /* ----------------------------------- HEADER MOBILE FINO A 576px -----------------------------------*/
 
 #header-menu {
@@ -180,7 +193,11 @@ h5 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header .col-100 {
+header .row {
+  min-height: 60px;
+}
+
+.header .col-100 {
   text-align: center;
 }
 
@@ -191,8 +208,25 @@ header .col-100 {
   text-align: center;
 }
 
-/* ----------------------------------- HEADER LARGE MOBILE DA 577px A 768px -----------------------------------*/
+/* ------- HEADER LARGE MOBILE DA 577px A 768px ------- */
 @media screen and (min-width: 577px) {
+  header .col-100 {
+    text-align: left;
+  }
+  .logo {
+    font-size: 2.5rem;
+  }
+}
+
+/* -------  HEADER TABLET DA 769px A 992px ------- */
+@media screen and (min-width: 769px) {
+  header .col-100 {
+    text-align: left;
+  }
+}
+
+/* ------- HEADER DESKTOP DA 993px A INFINITO ------- */
+@media screen and (min-width: 993px) {
   header .col-100 {
     text-align: left;
   }
@@ -201,22 +235,46 @@ header .col-100 {
   }
 }
 
-/* ----------------------------------- HEADER TABLET DA 769px A 992px -----------------------------------*/
+/* ----------------------------------- PRESENTATION SECTION MOBILE FINO A 576px -----------------------------------*/
+
+.category-food {
+  text-transform: uppercase;
+  color: rgb(185, 185, 185);
+}
+
+.title-card {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+.info-card {
+  background-color: white;
+  padding: 1rem;
+}
+
+li {
+  padding-bottom: 1rem;
+}
+
+/* ------- HEADER LARGE MOBILE DA 577px A 768px ------- */
+@media screen and (min-width: 577px) {
+}
+
+/* -------  HEADER TABLET DA 769px A 992px ------- */
 @media screen and (min-width: 769px) {
   header .col-100 {
     text-align: left;
   }
 }
 
-.logo {
-  font-size: 3rem;
-}
-/* ----------------------------------- HEADER DESKTOP DA 993px A INFINITO -----------------------------------*/
+/* ------- HEADER DESKTOP DA 993px A INFINITO ------- */
 @media screen and (min-width: 993px) {
   header .col-100 {
     text-align: left;
   }
   .logo {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
